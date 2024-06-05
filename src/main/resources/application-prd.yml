@@ -2,7 +2,7 @@ spring:
   application:
     name: blood-donor
   datasource:
-    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    url: ${DATABASE_URL}
     username: ${PGUSER}
     password: ${PGPASSWORD}
   jpa:
@@ -12,3 +12,4 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
