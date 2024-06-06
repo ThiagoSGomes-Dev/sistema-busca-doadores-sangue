@@ -8,7 +8,6 @@ public class BloodDonorApplication {
 
 	public static void main(String[] args) {
 		try {
-			// Adiciona um atraso de 3 segundos
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
