@@ -4,7 +4,7 @@ document
     event.preventDefault();
 
     const nome = document.getElementById("nome").value;
-    fetch(`http://localhost:8080/doador/searchuser?nome=${nome}`)
+    fetch(`https://sbdsp-2024-api.up.railway.app/doador/searchuser?nome=${nome}`)
       .then((response) => response.json())
       .then((data) => {
         const results = document.getElementById("results");
